@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Club</title>
+    <link rel="stylesheet" href="dist/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title title--big">Fight Club</h1>
+            <ul class="header__nav">
+                <li class="header__nav__bar">
+                    <a class="link--text" href="#history">Historia</a>
+                </li>
+                <li class="header__nav__bar">
+                    <a class="link--text" href="#characters">Personagens Principais</a>
+                </li>
+                <li class="header__nav__bar">
+                    <a class="link--text" href="#plot">Plot</a>
+                </li>
+                <li class="header__nav__bar">
+                    <a class="link--text" href="#opinion">Resenha pessoal</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="history image--text--section" id="history">
+        <img src="../dist/images/history.jpg" alt="Imagem do tyler e narrador ">
+        <div class="image-text--section__text__container">
+            <h2 class="title">Historia</h2>
+            <p class="text--p">
+                Clube da Luta é uma reflexão crítica acerca da sociedade de consumo na qual vivemos e os efeitos que ela provoca nos indivíduos. O filme começa nos mostrando várias marcas famosas e o modo como o protagonista e os demais consomem esses produtos com o objetivo de preencher um vazio interior.
+            </p>
+        </div>
+    </section>
+    <section class="characters" id="characters">
+        <nav class="characterss__tabs">
+            <button data-tab-button="tyler_durden" class="characters__tatab characters__tabs__button characters__tabs__button--is-active">
+                Tyler Durden
+            </button>
+            <button data-tab-button="narrador" class="characters__tabs characters__tabs__button">
+                Narrador 
+            </button>
+            <button data-tab-button="marla_singer" class="characters__tabs characters__tabs__button">
+                Marla Singer
+            </button>
+            <div data-tab-id="tyler_durden" class=" characters__div characters__div--is-active">
+                <img src="../dist/images/tyler.jpeg" alt="tyler">
+                <div class="image-text--section__text__container">
+                    <h2 class="title">Tyler Durden</h2>
+                    <p class="text--p">
+                        Tyler Durden (Brad Pitt), um vendedor de sabonetes despreocupado que defende uma filosofia ultra-masculina de força por meio da violência pessoal, que sua vida muda. 
+                    </p>
+                </div>
+            </div>
+            <div data-tab-id="narrador" class="characters__div">
+                <img src="../dist/images/narrador.jpeg" alt="narrador">
+                <div class="image-text--section__text__container">
+                    <h2 class="title">Narrador</h2>
+                    <p class="text--p">
+                        A história é contada por um narrador intencionalmente sem nome, mas que às vezes é chamado de Jack e outras vezes de Rupert
+                    </p>
+                </div>
+            </div>
+            <div data-tab-id="marla_singer" class="characters__div">
+                <img src="../dist/images/marla.jpeg" alt=".">
+                <div class="image-text--section__text__container">
+                    <h2 class="title">Marla singer</h2>
+                    <p class="text--p">
+                        Marla Singer teve uma infância difícil, seus pais morreram de câimbra cérebro-espinhal e por isso a garota foi criada por traficantes de pedra o que acabou por transformá-la na indigente que é.
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="plot image--text--section" id="plot">
+        <img src="../dist/images/plot.jpg" alt="tyler e tyler">
+        <div class="image-text--section__text__container">
+            <h2 class="title">O Plot</h2>
+            <p class="text--p">
+                O plot twist desse filme acontece quando Edward quer dar um basta nas proporções que o clube tomou. Nesse momento, Tyler desaparece e Edward descobre que ele e Tyler Durden são a mesma pessoa, fruto do seu distúrbio de personalidade.
+            </p>
+        </div>
+    </section>
+    <section class="image--text--section" id="opinion">
+        <img src="../dist/images/Opinion.jpg" alt="Tyler">
+        <div class="image-text--section__text__container">
+            <h2 class="title">O que eu acho?</h2>
+            <p class="text--p">
+                O filme "Clube da Luta" cativa-me profundamente ao abordar de forma perspicaz o consumismo, alinhando-se harmoniosamente com as ideias do filósofo Zygmunt Bauman. A narrativa reflexiva destaca a ilusão de controle na sociedade, onde a verdadeira liberdade emerge ao perder tudo, refletindo a fluidez das relações sociais de Bauman. A trama envolvente, com reviravoltas surpreendentes, contribui para uma experiência cinematográfica única. A obra desafia convenções, provocando uma reflexão profunda sobre consumismo, controle e liberdade. A combinação das reflexões filosóficas de Bauman com a execução magistral do enredo resulta em uma obra-prima que transcende e instiga uma profunda contemplação sobre a sociedade contemporânea.
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="text--f">
+                Feito por Lucas barros
+            </p>
+        </div>
+    </footer>
+    <script src="dist/scripts/main.js"></script>
+</body>
+</html>

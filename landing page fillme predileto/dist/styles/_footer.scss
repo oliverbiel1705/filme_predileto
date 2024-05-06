@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+.footer {
+    padding: 26px 8px;
+    background-color: variaveis.$corHeader;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

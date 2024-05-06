@@ -1,0 +1,59 @@
+@use 'variaveis';
+
+.characters {
+    padding: 5.6vw;
+    background-color: variaveis.$corCharacters;
+
+    img {
+        border-radius: 24px;
+    }
+
+    &__div {
+        display: none;
+        align-items: center;
+
+        &--is-active {
+            display: flex;
+            align-items: center;
+            margin-top: 36px;
+
+            div {
+                margin-left: 16px;
+            }
+        
+        
+            &__text__container {
+                padding: 0 2vw;
+                margin-bottom: 24px;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+                
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        text-align: center;
+
+        &__button {
+            color: variaveis.$corTextoP;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active{
+                border-color: variaveis.$corTextoP;
+            }
+        }
+    }
+}

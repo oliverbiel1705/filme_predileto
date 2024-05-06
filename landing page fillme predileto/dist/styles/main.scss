@@ -1,0 +1,99 @@
+@use 'variaveis';
+@use 'characters';
+@use 'header';
+@use 'footer';
+
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    color: variaveis.$corTextoP
+}
+
+@mixin title($fontSize: 36px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoTitulo;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+.title--big {
+    @include title;
+}
+
+.title {
+    @include title(24px);
+
+}
+
+.text--p {
+    @include text;
+
+}
+
+.text--f {
+    @include text(12px)
+}
+
+.link--text {
+    @include title(16px);
+    text-decoration: none;
+}
+
+.image--text--section {
+    padding: 5.6vw;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        display: block;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    div {
+        margin-left: 16px;
+    }
+
+
+    &__text__container {
+        padding: 0 2vw;
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
